@@ -1,7 +1,16 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import renderCommon from '../common.vue';
+</script>
 
 <template>
-  <a-input :key="item.componentKey" v-model:value="value" :placeholder="item.props.placeholder" :disabled="disabled" />
+  <renderCommon>
+    <a-input
+      :key="item.componentKey"
+      v-model:value="value"
+      :placeholder="item.props.placeholder"
+      :disabled="disabled"
+    />
+  </renderCommon>
 </template>
 
 <style scoped lang="scss"></style>
