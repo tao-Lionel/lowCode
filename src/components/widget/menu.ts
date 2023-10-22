@@ -1,3 +1,5 @@
+import input from './input';
+
 export default [
   {
     name: '常用控件',
@@ -9,4 +11,4 @@ export default [
       }
     ]
   }
-];
+] as WidgetCateItem[];
