@@ -7,6 +7,14 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import rInput from './widget/input/render.vue'
+
+
+
+const handleRender = (event:Event){
+  event.stopPropagation()
+}
+</script>
 
 <style scoped lang="scss"></style>
