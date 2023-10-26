@@ -1,6 +1,21 @@
+<template>
+  <renderCommon :item="item">
+    <a-input
+      :key="renderState.item?.componentKey"
+      v-model:value="renderState.value"
+      :placeholder="renderState.item?.props.placeholder"
+      :disabled="renderState.disabled"
+    />
+  </renderCommon>
+</template>
+
 <script setup lang="ts">
 import { PropType, reactive, watch } from 'vue';
 import renderCommon from '../common.vue';
+
+defineOptions({
+  name: 'rInput'
+});
 
 const props = defineProps({
   item: {
@@ -25,16 +40,5 @@ watch(
   }
 );
 </script>
-
-<template>
-  <renderCommon>
-    <a-input
-      :key="renderState.item?.componentKey"
-      v-model:value="renderState.value"
-      :placeholder="renderState.item?.props.placeholder"
-      :disabled="renderState.disabled"
-    />
-  </renderCommon>
-</template>
 
 <style scoped lang="scss"></style>

@@ -11,9 +11,11 @@ const initWidgetSort = (list: RenderItem[], parentSortIndex = ''): RenderItem[] 
 };
 
 const getRenderMap = (list: RenderItem[], map: Map<string, RenderItem>) => {
+  console.log('list===', list);
   list.forEach((item: RenderItem) => {
     map.set(item.componentKey, item);
   });
+  return map;
 };
 
 export { initWidgetSort, getRenderMap };

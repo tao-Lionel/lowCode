@@ -8,6 +8,13 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     AButton: typeof import('ant-design-vue/es')['Button']
+    AForm: typeof import('ant-design-vue/es')['Form']
+    AFormItem: typeof import('ant-design-vue/es')['FormItem']
+    AInput: typeof import('ant-design-vue/es')['Input']
+    AInputNumber: typeof import('ant-design-vue/es')['InputNumber']
+    ARadioGroup: typeof import('ant-design-vue/es')['RadioGroup']
+    ASelect: typeof import('ant-design-vue/es')['Select']
+    AttrList: typeof import('./src/components/attrList.vue')['default']
     Common: typeof import('./src/components/widget/common.vue')['default']
     Render: typeof import('./src/components/widget/input/render.vue')['default']
     RenderItem: typeof import('./src/components/renderItem.vue')['default']

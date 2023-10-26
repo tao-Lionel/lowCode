@@ -3,7 +3,7 @@
     <div>组件库</div>
     <div class="flex-col items-center">
       <template v-for="item in allWidgetConfig" :key="item.name">
-        <div>{{ item.name }}</div>
+        <div style="text-align: center">{{ item.name }}</div>
 
         <div v-for="cItem in item.list" :key="cItem.type">
           <!-- :filter="cItem.dragOnce ? '.disdraggable' : ''" -->

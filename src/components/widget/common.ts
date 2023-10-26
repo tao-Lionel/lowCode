@@ -69,7 +69,7 @@ export const publicObject: Record<ExtraPublicType, widgetExtraPublicItem> = {
 };
 
 // 私有属性
-export const PrivateObject: Record<ExtraPrivateType, widgetExtraPrivateItem> = {
+export const privateObject: Record<ExtraPrivateType, widgetExtraPrivateItem> = {
   options: {
     type: 'options',
     label: '自定义选项',
